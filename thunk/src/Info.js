@@ -1,5 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {loaldata} from './actions'
 
 export class Info extends React.Component{
     render(){
@@ -14,5 +15,10 @@ const mapStateProps = (state) => {
     }
 }
 
+const mapDispatch =  (dispatch) => {
+return {
+    loaldata:() => dispatch(loaldata())
+}
+}
 
-export default connect(mapStateProps)(Info)
+export default connect(mapStateProps, mapDispatch)(Info)
