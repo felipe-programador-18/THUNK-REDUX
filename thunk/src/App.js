@@ -5,7 +5,7 @@ import  {reducer}  from './reducer'
 import './App.css'
 import { createStore, applyMiddleware } from 'redux'
 import { Logger } from 'redux-logger'
-import {Info} from './Info'
+import Info from './Info'
 
 
 const store = createStore(
