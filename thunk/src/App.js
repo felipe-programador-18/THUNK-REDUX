@@ -9,7 +9,7 @@ import {Info} from './Info'
 
 
 const store = createStore(
- reducer, applyMiddleware(Logger)
+   applyMiddleware( reducer, applyMiddleware(Logger) )
 )
 
 
