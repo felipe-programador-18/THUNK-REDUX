@@ -1,5 +1,5 @@
 //create actions
-export const loaldata  = () =>{
+export const loalData= () =>{
    return {
        type: 'LOAD_DATA'
    }
