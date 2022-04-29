@@ -1,5 +1,5 @@
 import React from 'react'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import {loalData} from './actions'
 
 export class Info extends React.Component{
