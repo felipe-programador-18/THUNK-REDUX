@@ -1,7 +1,7 @@
 
 const INITIAL_STATE = {
     data: [],
-    isfetching:false
+    isFetching: false
 }
 
 export const reducer = (state= INITIAL_STATE, action) =>{
