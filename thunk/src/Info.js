@@ -3,6 +3,11 @@ import {connect} from 'react-redux'
 import {loalData} from './actions'
 
 export class Info extends React.Component{
+    // this when create date, wanna dispatch loaldate
+    //theoritical i am adding date to component
+    componentDidMount(){
+       this.props.loalData()
+    }
     render(){
         return <span>Testing span Info</span>
 
@@ -10,14 +15,14 @@ export class Info extends React.Component{
 }
 const mapStateProps = (state) => {
     return {
-        isfetching: state.isfetching,
+        isFetching: state.isFetching
 
     }
 }
 
-const mapDispatch =  (dispatch) => {
+const mapDispatch =(dispatch) => {
 return {
-    loaldata:() => dispatch(loalData())
+    loalData:() => dispatch(loalData())
 }
 }
 
