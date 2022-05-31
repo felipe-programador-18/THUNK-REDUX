@@ -58,7 +58,7 @@ export const loaUADateSucess = (data) => {
     }
 }
 
-export const loalUA= () =>{
+export const loalUA= (axios) =>{
     return dispatch => {
      dispatch(loalUARequestDate())
      axios
@@ -67,4 +67,9 @@ export const loalUA= () =>{
      .catch(() => dispatch(loadUAErrorRequest()) )
     //setTimeout(()=> dispatch(loalRequestDate()), 2000)
     }  
+ }
+
+
+ export default {
+     loalUA: loalUA.bind(null, axios)
  }
