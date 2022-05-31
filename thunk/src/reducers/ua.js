@@ -1,4 +1,4 @@
- const INITIAL_STATE = {
+/* const INITIAL_STATE = {
     data: [],
     isFetching: false,
     error: false
@@ -28,4 +28,5 @@
     return state
  }
 
-export default ua
+export default ua 
+*/
