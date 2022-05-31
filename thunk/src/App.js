@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 //import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
-import reducer from './reducers/index'
+import reducer from './reducers/reducer'
 import thunk from 'redux-thunk'
 import './App.css'
 import { configureStore } from '@reduxjs/toolkit'
