@@ -12,6 +12,9 @@ export class Info extends React.Component{
         if(this.props.isFetching){
           return <span>loading....</span>
         }
+        if(this.props.error){
+          return <span>Error in page !!</span>
+        }
         return <span>Info: {this.props.data.origin} </span>
 
     }
@@ -19,7 +22,8 @@ export class Info extends React.Component{
 const mapStateProps = (state) => {
     return {
         isFetching: state.isFetching,
-        data: state.data
+        data: state.data,
+        error: state.error
 
     }
 }
