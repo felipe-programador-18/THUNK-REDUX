@@ -21,9 +21,9 @@ export class Info extends React.Component{
 }
 const mapStateProps = (state) => {
     return {
-        isFetching: state.isFetching,
-        data: state.data,
-        error: state.error
+        isFetching: state.ip.isFetching,
+        data: state.ip.data,
+        error: state.ip.error
 
     }
 }
