@@ -38,3 +38,33 @@ export const loalData= () =>{
 }
 
 
+// THIS EXAMPLE IS CREATE ANOTHER FUNCTION TO SPLIT TINY STATE INSIDE STORE!!!
+
+export const loalUARequestDate = () =>{
+    return {
+        type:'LOAD_UA_REQUEST'
+    }
+}
+export const loadUAErrorRequest = () =>{
+    return {
+        type:'LOAD_UA_ERROR'
+    }
+}
+
+export const loaUADateSucess = (data) => {
+    return{
+        type:'LOAD_UA_SUCESS',
+        data: data
+    }
+}
+
+export const loalUA= () =>{
+    return dispatch => {
+     dispatch(loalUARequestDate())
+     axios
+     .get('http://httpbin.org/user-agent')
+     .then(({data}) => dispatch(loaUADateSucess(data)))
+     .catch(() => dispatch(loadUAErrorRequest()) )
+    //setTimeout(()=> dispatch(loalRequestDate()), 2000)
+    }  
+ }
