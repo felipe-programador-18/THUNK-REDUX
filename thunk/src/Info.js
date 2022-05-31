@@ -9,13 +9,17 @@ export class Info extends React.Component{
        this.props.loalData()
     }
     render(){
-        return <span>Info more Info</span>
+        if(this.props.isFetching){
+          return <span>loading....</span>
+        }
+        return <span>Info: {this.props.data.origin} </span>
 
     }
 }
 const mapStateProps = (state) => {
     return {
-        isFetching: state.isFetching
+        isFetching: state.isFetching,
+        data: state.data
 
     }
 }
