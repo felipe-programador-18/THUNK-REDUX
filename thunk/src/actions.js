@@ -9,6 +9,11 @@ export const loalRequestDate = () =>{
         type:'LOAD_DATA_REQUEST'
     }
 }
+export const loadErrorRequest = () =>{
+    return {
+        type:'LOAD_DATA_ERROR'
+    }
+}
 
 //create another function to testing and learning more about redux thunk!!!
 //function sincrona
@@ -27,6 +32,7 @@ export const loalData= () =>{
     axios
     .get('http://httpbin.org/ip')
     .then(({data}) => dispatch(loaDateSucess(data)))
+    .catch(() => dispatch(loadErrorRequest()) )
    //setTimeout(()=> dispatch(loalRequestDate()), 2000)
    }  
 }
