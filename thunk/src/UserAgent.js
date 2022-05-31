@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import {loalUA} from './actions'
+import  actions from './actions'
 
 export class UserAgent extends React.Component{
     // this when create date, wanna dispatch loaldate
@@ -30,7 +30,7 @@ const mapStateProps = (state) => {
 
 const mapDispatch =(dispatch) => {
 return {
-    loalUA:() => dispatch(loalUA())
+    loalUA:() => dispatch(actions.loalUA())
 }
 }
 
