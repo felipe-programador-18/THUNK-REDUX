@@ -1,5 +1,5 @@
 
-const INITIAL_STATE = {
+/* const INITIAL_STATE = {
     data: [],
     isFetching: false,
     error: false
@@ -31,3 +31,4 @@ const ip = (state= INITIAL_STATE, action) =>{
 
 
 export default ip
+*/
