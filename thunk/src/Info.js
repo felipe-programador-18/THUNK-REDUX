@@ -9,7 +9,7 @@ export class Info extends React.Component{
        this.props.loalData()
     }
     render(){
-        return <span>Testing span Info</span>
+        return <span>Info more Info</span>
 
     }
 }
