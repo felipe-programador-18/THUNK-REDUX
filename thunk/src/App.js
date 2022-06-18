@@ -11,7 +11,7 @@ import UserAgent from './UserAgent'
 
 
 const store = configureStore({
-    reducer: reducer,
+  reducer,
   applyMiddleware :[thunk,Logger] 
 
 })
