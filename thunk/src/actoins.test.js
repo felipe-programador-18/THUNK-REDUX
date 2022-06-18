@@ -10,9 +10,9 @@ describe('test in actions', () => {
         get.mockReturnValue(Promise.resolve(data))
         let callNumber = 0
         let dispatch = jest.fn(params => {
-            if(callNumber === 0){
+            it(callNumber === 0){
             expect(params).toEqual({type:'LOAD_UA_REQUEST'})
-            }if(callNumber === 1){
+            }it(callNumber === 1){
             expect(params).toEqual({type:'LOAD_UA_SUCESS',
             data: data
             })
